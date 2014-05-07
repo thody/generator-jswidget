@@ -44,7 +44,6 @@ var ReactGenerator = yeoman.generators.Base.extend({
     this.mkdir('app/templates');
 
     this.copy('_package.json', 'package.json');
-    this.copy('_bower.json', 'bower.json');
   },
 
   projectfiles: function () {
