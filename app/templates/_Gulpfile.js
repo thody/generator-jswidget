@@ -18,6 +18,7 @@ gulp.task('styles', function () {
     gulp.src(paths.styles + '/scss/main.scss')
         .pipe(sass())
         .pipe(connect.reload())
+        .pipe(rename(package.name + '-' + package.version + '.css'))
         .pipe(gulp.dest(paths.dist + '/css'));
 });
 
