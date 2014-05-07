@@ -23,7 +23,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(paths.scripts + '/index.js', {read: false})
+  return gulp.src(paths.scripts + '/app.js', {read: false})
     .pipe(browserify({ 
         insertGlobals : false, 
         transform: ['reactify'],
