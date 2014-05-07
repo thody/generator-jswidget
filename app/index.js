@@ -40,10 +40,14 @@ var ReactGenerator = yeoman.generators.Base.extend({
   },
 
   app: function () {
-    this.mkdir('app');
-    this.mkdir('app/templates');
+    this.mkdir('src');
+    this.mkdir('src/styles');
+    this.mkdir('src/styles/scss');
+    this.mkdir('src/scripts');
 
-    this.copy('_package.json', 'package.json');
+    this.template('_package.json', 'package.json');
+    this.template('_Gulpfile.json', 'Gulpfile.json');
+    this.copy('_.gitignore.json', '.gitignore.json');
   },
 
   projectfiles: function () {
