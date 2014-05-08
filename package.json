@@ -1,10 +1,10 @@
 {
-  "name": "generator-react",
+  "name": "generator-jswidget",
   "version": "0.0.0",
-  "description": "Yeoman generator",
-  "license": "MIT",
+  "description": "Yeoman generator to scaffold for React + Gulp + Browserify module.",
+  "license": "BSD",
   "main": "app/index.js",
-  "repository": "thody/generator-react",
+  "repository": "thody/generator-jswidget",
   "author": {
     "name": "Adam Thody",
     "email": "adam@adamthody.com",
