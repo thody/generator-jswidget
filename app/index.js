@@ -26,15 +26,12 @@ var ReactGenerator = yeoman.generators.Base.extend({
     this.log(chalk.magenta('You\'re using the fantastic React generator.'));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
+      name: "name",
+      message: "What do you want to call this app?"
     }];
 
     this.prompt(prompts, function (props) {
-      this.someOption = props.someOption;
-
+      this.slugname = this._.slugify(props.name);
       done();
     }.bind(this));
   },
@@ -46,8 +43,11 @@ var ReactGenerator = yeoman.generators.Base.extend({
     this.mkdir('src/scripts');
 
     this.template('_package.json', 'package.json');
-    this.template('_Gulpfile.json', 'Gulpfile.json');
-    this.copy('_.gitignore.json', '.gitignore.json');
+    this.template('_Gulpfile.js', 'Gulpfile.js');
+    this.template('src/_index.html', 'src/index.html');
+    this.copy('_.gitignore', '.gitignore');
+    this.copy('src/scripts/app.js', 'src/scripts/app.js');
+    this.copy('src/styles/scss/main.scss', 'src/styles/scss/main.scss');
   },
 
   projectfiles: function () {
