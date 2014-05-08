@@ -1,4 +1,4 @@
-# generator-react [![Build Status](https://secure.travis-ci.org/thody/generator-jswidget.png?branch=master)](https://travis-ci.org/thody/generator-jswidget)
+# generator-jswidget [![Build Status](https://secure.travis-ci.org/thody/generator-jswidget.png?branch=master)](https://travis-ci.org/thody/generator-jswidget)
 
 
 ## Getting Started
