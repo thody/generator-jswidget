@@ -3,5 +3,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-react' ]; then cd .. && eval "mv $currentfolder generator-react" && cd generator-react; fi
+  - if [ "$currentfolder" != 'generator-jswidget' ]; then cd .. && eval "mv $currentfolder generator-jswidget" && cd generator-jswidget; fi
 
